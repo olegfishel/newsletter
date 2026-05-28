@@ -1,90 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Morning Briefing — May 28, 2026</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Georgia&display=swap" rel="stylesheet" />
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Georgia:ital,wght@0,400;0,700;1,400&display=swap');
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      background-color: #fdf6ee;
-      color: #2c2416;
+      background-color: #f5f0e8;
+      color: #2c2c2c;
       font-family: Georgia, 'Times New Roman', serif;
-      margin: 0;
-      padding: 40px 20px 80px;
-      line-height: 1.85;
+      font-size: 18px;
+      line-height: 1.75;
+      padding: 40px 20px 60px;
     }
-    .container {
-      max-width: 780px;
-      margin: 0 auto;
+
+    .container { max-width: 780px; margin: 0 auto; }
+
+    .masthead {
+      text-align: center;
+      border-top: 3px solid #8b0000;
+      border-bottom: 1px solid #8b0000;
+      padding: 18px 0 14px;
+      margin-bottom: 10px;
     }
+
+    .masthead h1 {
+      font-size: 13px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #8b0000;
+      font-weight: normal;
+    }
+
     .dateline {
-      font-family: Georgia, serif;
-      font-variant: small-caps;
-      font-size: 0.85rem;
-      letter-spacing: 0.12em;
-      color: #7a5c3a;
+      font-size: 28px;
+      font-weight: bold;
       text-align: center;
-      margin-bottom: 6px;
+      margin: 16px 0 6px;
+      color: #1a1a1a;
     }
-    h1 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 2.05rem;
-      font-weight: 700;
-      text-align: center;
-      margin: 0 0 8px;
-      line-height: 1.25;
-      color: #1a1108;
-    }
+
     .source-note {
+      font-size: 12px;
       text-align: center;
-      font-size: 0.78rem;
-      color: #9a7a55;
+      color: #666;
       font-style: italic;
-      margin-bottom: 40px;
+      margin-bottom: 28px;
       letter-spacing: 0.03em;
     }
-    p {
-      margin: 0 0 1.6em;
-      font-size: 1.045rem;
+
+    .wsj-front-page {
+      background-color: #eee8d8;
+      border-left: 4px solid #8b0000;
+      padding: 20px 24px;
+      margin: 0 0 32px 0;
+      border-radius: 2px;
     }
+
+    .wsj-front-page h2 {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #8b0000;
+      font-weight: normal;
+      margin-bottom: 14px;
+    }
+
+    .wsj-front-page .section-label {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #666;
+      font-weight: bold;
+      margin: 14px 0 6px;
+    }
+
+    .wsj-front-page ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .wsj-front-page ul li {
+      font-size: 15px;
+      line-height: 1.6;
+      padding: 5px 0;
+      border-bottom: 1px dotted #c9b99a;
+      color: #2c2c2c;
+    }
+
+    .wsj-front-page ul li:last-child { border-bottom: none; }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #c9b99a;
+      margin: 32px 0;
+    }
+
+    p { margin-bottom: 1.3em; }
+
     .closing {
       text-align: center;
       font-style: italic;
-      color: #7a5c3a;
-      margin-top: 48px;
-      font-size: 1rem;
-    }
-    hr {
-      border: none;
-      border-top: 1px solid #d9c8b0;
-      margin: 40px 0;
+      color: #555;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #c9b99a;
+      font-size: 17px;
     }
   </style>
 </head>
 <body>
   <div class="container">
+
+    <div class="masthead">
+      <h1>Morning Briefing</h1>
+    </div>
     <div class="dateline">Thursday, May 28, 2026</div>
-    <h1>Your Morning Briefing</h1>
-    <p class="source-note">Sourced from The Wall Street Journal, The New York Times, and updated with reporting from Euronews, The Washington Times, PBS NewsHour, CBS News, CNBC, Radio Free Europe/Radio Liberty, and the Washington Post</p>
+    <div class="source-note">Sourced from The Wall Street Journal, The New York Times, and updated with reporting from NPR, Reuters, France 24, The Washington Post, and Just Security</div>
+
+    <!-- WSJ WHAT'S NEWS BLOCK — TOP -->
+    <div class="wsj-front-page">
+      <h2>WSJ · What's News · May 28, 2026</h2>
+
+      <div class="section-label">Business &amp; Finance</div>
+      <ul>
+        <li>Chip rally reaches $5.7 trillion — markets ask how much further it can go</li>
+        <li>One million new-car buyers have left the market and aren't expected to return soon, reshaping the auto industry's recovery math</li>
+        <li>China is exporting its factories across the world — relocating to North America, South America, and Eastern Europe — and spooking local competitors</li>
+        <li>Costco, Gap, and Dell Technologies among companies reporting earnings today; April personal income and spending data also due</li>
+        <li>New Jersey film and TV productions poured nearly $1 billion into the state in the past year — roughly twice 2024 levels — on the strength of its tax incentive program</li>
+        <li>Johnson &amp; Johnson has perfected the art of the biotech deal, but there's a catch</li>
+      </ul>
+
+      <div class="section-label">World-Wide</div>
+      <ul>
+        <li>U.S. forces struck Iran again after Tehran launched drones at commercial ships in the Strait of Hormuz; negotiations continue</li>
+        <li>Estonia, on NATO's eastern border with Russia, is actively preparing for a wider war</li>
+        <li>Justice Department opens perjury probe into E. Jean Carroll, who sued Trump for sexual assault</li>
+        <li>Trump administration in talks to fund U.S. drone companies</li>
+        <li>Gen. Christopher LaNeve, a hardline four-star general, is tipped to become the next Army chief of staff</li>
+        <li>Wealthy retirees are buying "med-a-terres" — pied-à-terre apartments near their New York City doctors</li>
+      </ul>
+    </div>
+
+    <hr class="divider">
 
     <p>Good morning, it's Thursday, May 28, 2026.</p>
 
-    <p>The most volatile flash point in the world this morning is the Strait of Hormuz, where the confrontation between the United States and Iran has entered a newly dangerous phase. American forces carried out fresh strikes overnight against an Iranian military installation that the Pentagon described as posing a threat to U.S. troops and commercial shipping through the narrow waterway, through which roughly a fifth of the world's oil supply passes each day. Iran's Islamic Revolutionary Guard Corps answered swiftly, claiming it had targeted an American airbase early Thursday morning and warning that more "decisive" action would follow if what Tehran called American aggression continued. Oil markets responded immediately, with Brent crude climbing roughly two percent to nearly $96 a barrel and West Texas Intermediate pushing toward $91 — levels that underscore just how thin the margin has become between a manageable regional crisis and something far wider. The United Kingdom announced it is deploying drones, fighter aircraft, and a Royal Navy warship to join an international mission to keep commercial lanes open through the strait, adding a new dimension to a coalition that has been quietly assembling around American efforts. President Trump, for his part, said he would not be rushed into a deal with Tehran, adding pointedly that Iran's strategy of trying to outlast his administration would fail because he does not, in his words, "care about the midterms." Secretary of State Marco Rubio said talks have made some progress and that the president remains committed to giving diplomacy every chance to succeed — a tension at the heart of a standoff that has already shattered a fragile ceasefire brokered in April.</p>
+    <p>The war with Iran, which appeared to be winding toward a negotiated pause just days ago, has taken a sharp turn for the worse. U.S. forces launched a new round of strikes on Iran on Tuesday, citing Iranian drone attacks on commercial shipping in the Strait of Hormuz as justification. Tehran retaliated by targeting a U.S. military base in the region, and Iran's government warned it would "leave no act of hostility unanswered." President Trump, asked about domestic pressure to bring the conflict to a close ahead of midterm elections, was characteristically blunt: "I don't care about the midterms." He also threatened consequences for Oman after reports emerged of a plan that would see Oman and Iran jointly charge a toll for ships passing through the strait, telling reporters that Oman would "behave like everybody else or we'll have to blow them up." WSJ reporters watching from a vessel off the coast of Malaysia have documented the shadow fleet keeping Iran's economy afloat in the meantime — aging tankers carrying out elaborate ship-to-ship oil transfers, painting over their names and obscuring cargo origins before Iranian crude makes its way to China. The war has not dimmed that trade, and U.S. negotiators are increasingly aware that Tehran has an economic lifeline that complicates their leverage.</p>
 
-    <p>In Lebanon, the other front of a widening Middle Eastern war, Israeli forces pressed further into the country's south, crossing the Litani River — a boundary that has long carried symbolic as well as strategic weight — and clashing directly with Hezbollah fighters in the town of Zawtar al-Sharqieh. Overnight airstrikes across southern Lebanon and the coastal city of Tyre killed at least fourteen people, among them civilians including children, and left scores wounded. Israel's air force also struck a southern suburb of Beirut Thursday morning, while a drone hit an apartment building in Sidon sheltering displaced families. Israel said the strikes targeted Hezbollah infrastructure; Hezbollah responded with dozens of drone and rocket attacks on Israeli positions in the south and communities in northern Israel. The Israeli military issued sweeping forced displacement orders for the population of southern Lebanon, a region of tens of thousands of people, and shelters in Sidon were reported at capacity, with authorities directing civilians further north toward Beirut. A round of talks involving the parties is expected in Washington, though the prospects for any near-term de-escalation look distant as fighting intensifies along multiple axes.</p>
+    <p>The conflict is rippling across the region in ways that go beyond the Iran front. Israeli warplanes struck the city of Tyre in southern Lebanon this morning, killing at least fourteen people, with Israel citing suspected Hezbollah infrastructure as the target. A separate airstrike hit a southern suburb of Beirut. And Estonia — a small Baltic nation of roughly 1.4 million people sitting directly on NATO's eastern border with Russia — is, according to WSJ reporting, actively preparing its population and defenses for the possibility of a wider European war, a sign of how regional anxiety has spiked across multiple theaters simultaneously.</p>
 
-    <p>At home, a fresh economic snapshot offers complicated reading for an administration that came to power promising relief on prices and cost of living. A new poll shows voter confidence in the economy has plummeted to its lowest point in nearly four years, a troubling signal for Republicans with midterm elections approaching. Official government figures, meanwhile, suggest the underlying picture is more mixed than the poll implies: business investment rose by more than ten percent in the first quarter, powered by spending on equipment and intellectual property, and the labor market has continued to expand. But surveys of how people actually feel about their financial circumstances rarely track smoothly with macroeconomic statistics, and the gap between the two has become a defining political challenge for the White House. Trump's comment earlier this week that the United States would have no choice but to "blow up" Oman if the Gulf state and Iran proceeded with plans to jointly charge shipping tolls at the Strait of Hormuz added an uncharacteristic bellicosity to the diplomatic calendar, even as aides stressed that the president's preferred outcome remains a negotiated resolution with Tehran.</p>
+    <p>On the domestic political front, Tuesday's Texas Senate Republican primary runoff produced a result that reverberated through both parties: Ken Paxton, the state's combative attorney general, defeated incumbent Senator John Cornyn by nearly thirty percentage points. The margin was a blunt demonstration of Trump's continued grip on the Republican base and a rebuke to the Senate's old guard — Cornyn was a dependable conservative, a skilled operator, and a prolific fundraiser. His defeat leaves Republicans quietly anxious, and Democrats eyeing Texas as, for the first time in years, a plausibly competitive Senate race come November.</p>
 
-    <p>A public health emergency is unfolding in East Africa with a speed that has alarmed international health officials. Uganda ordered the immediate closure of its border with the Democratic Republic of Congo Wednesday, after the number of suspected Bundibugyo Ebola cases in eastern Congo approached a thousand, with at least 220 suspected deaths. Ugandan health workers who treated Congolese patients at border facilities have themselves been exposed, and the government said anyone entering from Congo under emergency clearance — the only circumstances under which crossing will be permitted — will be placed in mandatory isolation for twenty-one days. The World Health Organization has been reluctant to endorse border closures, arguing that they tend to push movement to informal crossings that evade monitoring and can paradoxically accelerate the spread of disease. But the Ugandan government concluded the risk of inaction was greater, and there are concerns in the region that Bundibugyo, a rare Ebola strain with no approved vaccine or treatment, could establish itself in densely populated areas where containment would become exponentially more difficult.</p>
+    <p>The Justice Department announced it has opened an investigation into whether E. Jean Carroll, the writer who accused President Trump of sexual assault and won civil judgments against him, committed perjury during those proceedings. The move was immediately interpreted by critics as politically motivated retaliation. Separately, a Times investigation into Howard Lutnick — the Commerce Secretary — details how Lutnick pushed legal boundaries during his first year in office. And former First Lady Jill Biden disclosed in an interview that her husband's disastrous performance in the June 2024 presidential debate made her think, in the moment: "Oh, my God, he's having a stroke." It is among the starkest public admissions yet about the state of President Biden's health during that campaign period.</p>
 
-    <p>The broader climate context in which these crises are unfolding received a stark update from the World Meteorological Organization, which said there is now a seventy-five percent probability that the five-year average temperature for 2026 through 2030 will breach the critical threshold of 1.5 degrees Celsius above the pre-industrial baseline — a boundary that scientists have long described as the outer limit of manageable warming. The report landed as western Europe endured what meteorologists called a heat dome, a stalled mass of warm air pushing May temperature records in Britain and France to levels not seen in recorded history.</p>
+    <p>The New York Times and the San Antonio Express-News published a major joint investigation today into the consequences of Texas's post-Uvalde push to put police officers on every school campus in the state. Since the 2022 shooting that killed nineteen children and two adults, Texas districts have deployed roughly eleven thousand school officers — more officers than many states have on their entire police forces. What the investigation found was not a story of protection: officers have hogtied a ten-year-old with a behavioral disorder who kicked his principal, handcuffed a six-year-old who kicked a school employee, pointed a gun at a seventeen-year-old who ran off campus after being caught with a vape, and slammed a fourteen-year-old face-first into a wall in front of other students. Texas does not require officers to report uses of force in schools unless they discharge a weapon. The story is published without a paywall.</p>
 
-    <p>In the world of technology and finance, two notable shifts are worth marking. Hong Kong has overtaken Switzerland to become the world's leading center for cross-border private wealth management, reflecting a years-long migration of ultra-high-net-worth capital through the Asia-Pacific corridor. And in artificial intelligence, KPMG announced it had deployed Anthropic's Claude to all 276,000 of its employees across 138 countries, making it one of the largest single enterprise rollouts of an AI model to date. OpenAI simultaneously unveiled a four-billion-dollar consulting subsidiary called DeployCo, aimed at helping large organizations integrate AI into their operations — a sign that the frontier labs are increasingly competing not just on model capability but on implementation services. Canada's privacy regulator also ruled this week that OpenAI violated the country's privacy laws in a case tied to the collection and use of personal data, a decision that adds regulatory pressure to the AI industry's global expansion.</p>
+    <p>In economic news, markets are hovering cautiously — S&P 500 futures were down slightly this morning — but the dominant story in equities remains the semiconductor boom. The chip rally is now valued at $5.7 trillion, and analysts are openly debating how much further it can sustain. Meanwhile, the auto industry absorbed a sobering new assessment: approximately one million prospective new-car buyers who left the market in recent years are not expected to return anytime soon, undercut by high gas prices, elevated interest rates, and persistent inflation. The industry's recovery math, which executives had assumed pointed reliably upward, no longer does. And China's factory-export strategy is drawing fresh attention — Chinese manufacturers, squeezed by Western tariffs and weak domestic demand, are relocating production facilities to North America, South America, and Eastern Europe, prompting concern from local businesses that they are importing not just products but a pace of competition they cannot match.</p>
 
-    <p>Finally, a moment of pure hometown joy for New York: the Knicks are going to the NBA Finals. The team swept the Cleveland Cavaliers on Wednesday night with a dominant 130-to-93 victory, completing their first trip to the championship round since 1999. Jalen Brunson, who won the Eastern Conference Finals MVP award, has been the engine of a run that has captured the city's imagination in a way that few seasons in recent memory have matched. Their opponent will be determined tonight, when the Oklahoma City Thunder and San Antonio Spurs play a pivotal Game 5 in the Western Conference finals. The NBA Finals begin June 3 on ABC. President Trump mentioned he may attend a home game. And the Knicks announced they will donate hundreds of tickets to young fans through the Garden of Dreams Foundation — a gesture that felt very much in keeping with the spirit of a team that has, at long last, given its city something to celebrate.</p>
+    <p>President Trump has refiled his $10 billion defamation lawsuit against The Wall Street Journal, after a federal judge previously dismissed the complaint for failing to meet the legal standard for actual malice. CBS News correspondent Sharyn Alfonsi says the network declined to renew her contract following a dispute over a delayed investigative segment about Venezuelan migrants held in an El Salvador prison, with Alfonsi saying CBS pressured journalists to soften accurate reporting.</p>
 
-    <p class="closing">That's your briefing for this morning.</p>
+    <p>The Ebola situation in central Africa has grown more serious: Uganda has closed its border with the Democratic Republic of Congo as the outbreak expands, and American officials who are exposed to the virus will now be sent to Kenya for treatment rather than repatriated to the United States. Scientists note the outbreak has been worse than anticipated in part because the virus has behaved in unexpected ways. A court in Texas sentenced Kenneth Iwamasa — the personal assistant who injected actor Matthew Perry with the ketamine that killed him — to more than three years in prison.</p>
+
+    <p>On a broader technology note, a major teachers' union is calling on schools not to give students any tech devices before third grade and to keep AI out of elementary schools entirely. Meanwhile, people increasingly using AI to draft and file their own lawsuits are, according to the Times, beginning to overwhelm the court system. And a company has filed plans to build a five-thousand-acre AI data center near Broadview, Montana — a town of roughly one hundred and forty people — a campus that would cover approximately the area of 3,800 football fields.</p>
+
+    <p>The Carolina Hurricanes are one win away from their first Stanley Cup Final appearance since 2006, after a 4-0 victory over the Montreal Canadiens. Paul McCartney, now eighty-three, sat down with the Times and reflected on why he cannot stop writing music. "It's a magical world, music," he said. "How can these frequencies affect your heart? That's magic. I love it." The Scripps National Spelling Bee concludes its final round today in Washington.</p>
+
+    <div class="closing">That's your briefing for this morning.</div>
   </div>
 </body>
 </html>

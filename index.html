@@ -1,111 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning Briefing — Friday, May 29, 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Georgia&display=swap" rel="stylesheet">
-<style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    background-color: #fdf6ee;
-    color: #2c2417;
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 18px;
-    line-height: 1.85;
-    padding: 48px 24px 72px;
-  }
-  .container {
-    max-width: 780px;
-    margin: 0 auto;
-  }
-  .dateline {
-    font-variant: small-caps;
-    font-size: 13px;
-    letter-spacing: 0.12em;
-    text-align: center;
-    color: #8a6e4b;
-    margin-bottom: 10px;
-  }
-  h1 {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 2.1em;
-    font-weight: 700;
-    text-align: center;
-    line-height: 1.25;
-    color: #1a120a;
-    margin-bottom: 10px;
-  }
-  .source-note {
-    text-align: center;
-    font-size: 12.5px;
-    color: #9a7d5e;
-    font-style: italic;
-    margin-bottom: 36px;
-    letter-spacing: 0.02em;
-  }
-  .rule {
-    border: none;
-    border-top: 1px solid #d4bfa0;
-    margin: 0 auto 36px;
-    width: 60%;
-  }
-  p {
-    margin-bottom: 1.4em;
-    text-align: justify;
-    hyphens: auto;
-  }
-  p:first-of-type::first-letter {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 3.6em;
-    font-weight: 700;
-    float: left;
-    line-height: 0.75;
-    margin: 6px 8px 0 0;
-    color: #7a5230;
-  }
-  .closing {
-    text-align: center;
-    font-style: italic;
-    color: #7a5230;
-    margin-top: 2.4em;
-    font-size: 0.97em;
-  }
-  footer {
-    margin-top: 48px;
-    text-align: center;
-    font-size: 11.5px;
-    color: #b09070;
-    letter-spacing: 0.04em;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morning Briefing — May 29, 2026</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Georgia:ital,wght@0,400;0,700;1,400&display=swap');
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #f5f0e8;
+      color: #2c2c2c;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 18px;
+      line-height: 1.75;
+      padding: 40px 20px 60px;
+    }
+
+    .container { max-width: 780px; margin: 0 auto; }
+
+    .masthead {
+      text-align: center;
+      border-top: 3px solid #8b0000;
+      border-bottom: 1px solid #8b0000;
+      padding: 18px 0 14px;
+      margin-bottom: 10px;
+    }
+
+    .masthead h1 {
+      font-size: 13px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #8b0000;
+      font-weight: normal;
+    }
+
+    .dateline {
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+      margin: 16px 0 6px;
+      color: #1a1a1a;
+    }
+
+    .source-note {
+      font-size: 12px;
+      text-align: center;
+      color: #666;
+      font-style: italic;
+      margin-bottom: 28px;
+      letter-spacing: 0.03em;
+    }
+
+    .wsj-block {
+      background-color: #eee8d8;
+      border-left: 4px solid #8b0000;
+      padding: 20px 24px;
+      margin: 0 0 32px 0;
+      border-radius: 2px;
+    }
+
+    .wsj-block h2 {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #8b0000;
+      font-weight: normal;
+      margin-bottom: 14px;
+    }
+
+    .wsj-block .section-label {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #666;
+      font-weight: bold;
+      margin: 14px 0 6px;
+    }
+
+    .wsj-block ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .wsj-block ul li {
+      font-size: 15px;
+      line-height: 1.6;
+      padding: 5px 0;
+      border-bottom: 1px dotted #c9b99a;
+      color: #2c2c2c;
+    }
+
+    .wsj-block ul li:last-child { border-bottom: none; }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #c9b99a;
+      margin: 32px 0;
+    }
+
+    p { margin-bottom: 1.3em; }
+
+    .closing {
+      text-align: center;
+      font-style: italic;
+      color: #555;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #c9b99a;
+      font-size: 17px;
+    }
+  </style>
 </head>
 <body>
-<div class="container">
+  <div class="container">
 
-  <p class="dateline">Friday, May 29, 2026</p>
-  <h1>Morning Briefing</h1>
-  <p class="source-note">Sourced from The Wall Street Journal, The New York Times, and updated with reporting from Reuters, NPR, Axios, The Washington Post, and Just Security</p>
-  <hr class="rule">
+    <div class="masthead">
+      <h1>Morning Briefing</h1>
+    </div>
+    <div class="dateline">Friday, May 29, 2026</div>
+    <div class="source-note">Sourced from The Wall Street Journal, The New York Times, and updated with reporting from Reuters, Axios, NPR, The Japan Times, and Just Security</div>
 
-  <p>Good morning, it's Friday, May 29, 2026. The most consequential diplomatic story of the season arrived close to a resolution overnight, as the United States and Iran edged within arm's reach of a deal that could reshape the Middle East for years to come. Vice President JD Vance said Thursday that negotiators from both sides had effectively agreed to a memorandum of understanding that would extend the current ceasefire by sixty days, formally reopen the Strait of Hormuz to unrestricted shipping, and set the stage for formal talks on limiting Iran's nuclear program. Under the terms outlined by officials briefed on the negotiations, Tehran would commit to not pursuing a nuclear weapon, agree to dispose of its stockpile of highly enriched uranium, and remove mines from the Strait within thirty days. In exchange, Washington would issue sanctions waivers allowing Iran to sell oil on international markets. There was, however, one conspicuous absence from the celebration: President Trump had not yet given his final approval. Sources who spoke to Axios and Reuters said the deal was done at the negotiating table, but it remains waiting on the president's signature before it becomes real.</p>
+    <div class="wsj-block">
+      <h2>WSJ · What's News · May 29, 2026</h2>
 
-  <p>The prospect of a reopened Strait of Hormuz — through which roughly a fifth of the world's oil supply passes — gave financial markets something to chew on heading into Friday's session. Silver prices rose sharply on the news, and oil markets gyrated as traders weighed the implications for global supply chains. The good news for investors came alongside a complicated morning of economic data. The Bureau of Economic Analysis confirmed that real GDP grew at an annualized rate of 2.0 percent in the first quarter of 2026, falling short of earlier estimates of 2.3 percent. The PCE price index, the Federal Reserve's preferred gauge of inflation, came in slightly below expectations for April, offering a modest breath of relief after months of stubbornly elevated readings. The Fed funds rate sits at 3.5 to 3.75 percent, and policymakers are signaling that a single quarter-point cut remains the most likely scenario for the second half of the year — if the inflation numbers continue to cooperate.</p>
+      <div class="section-label">Business &amp; Finance</div>
+      <ul>
+        <li>Americans are falling behind on a $1.25 trillion credit-card bill as inflation and high rates push households toward "survival debt"</li>
+        <li>Labor's share of economic output hits an all-time low; profit share near record high — explaining the gap between strong markets and glum consumers</li>
+        <li>Memory chips are now worth more than oil, but analysts warn of the same commodity-style price volatility</li>
+        <li>Corporate America begins rationing AI spending as the bill for massive computing needs comes due</li>
+        <li>Real-estate agents are quitting in droves as the housing slump stretches into its fourth year</li>
+        <li>California billionaires flee to the Nevada side of Lake Tahoe amid the state's proposed wealth tax</li>
+        <li>Paul McCartney releases "The Boys of Dungeon Lane" today; Costco, Gap, and Dell report earnings</li>
+      </ul>
 
-  <p>In Gaza, the picture darkened considerably. Israeli Prime Minister Benjamin Netanyahu has directed the military to expand its operational footprint from 53 percent to 70 percent of Gaza's territory, a move that pushes well beyond the boundaries contemplated in the October ceasefire agreement. Separately, Israel's ambassador to the United Nations, Danny Danon, announced that Israel would sever ties with Secretary General António Guterres after the UN added Israel to a formal blacklist concerning sexual violence — a decision Danon called "disconnected from the facts and reality." The war's ripples continued to reach Europe: France formally asked its public prosecutor to open an investigation into the treatment of French nationals who were aboard an activist flotilla bound for Gaza and intercepted by Israeli authorities. Survivors described being subjected to sexual violence, exposure to the cold, beatings, and repeated humiliation. Israeli officials denied the most serious allegations, but Paris made clear it expects a full accounting.</p>
+      <div class="section-label">World-Wide</div>
+      <ul>
+        <li>U.S. and Iran within reach of a deal to wind down the war; Treasury Secretary Bessent says framework is close, awaiting Trump's sign-off</li>
+        <li>Hezbollah's one-way drones have become Israel's top concern on its northern flank</li>
+        <li>Netanyahu says Israel will expand military control to 70% of Gaza</li>
+        <li>Israel severs ties with U.N. secretary general after being placed on sexual-violence blacklist</li>
+        <li>Blue Origin rocket explodes on its Florida launchpad; no injuries reported</li>
+        <li>Russia's Ukraine war: drone strikes have knocked out a quarter of Russia's oil refining capacity</li>
+        <li>Putin's $26 billion antiaging initiative — organ printing, gene therapy, ultralow temperatures — revealed</li>
+      </ul>
+    </div>
 
-  <p>The war in Ukraine continued to generate dangerous spillover into neighboring countries. A Russian attack drone intended for Ukrainian targets veered off course and struck an apartment building in Galati, in eastern Romania, injuring two people. Romanian President Nicușor Dan moved swiftly, declaring the Russian consul in the Black Sea port city of Constanta persona non grata and ordering the consulate closed. The incident rattled NATO capitals and prompted Romania to formally request accelerated anti-drone support from the alliance. Analysts tracking Russian military expenditures say Moscow is now on track to overspend its Ukraine war budget by roughly $28 billion this year, suggesting the Kremlin's battlefield ambitions continue to strain an economy already battered by sanctions.</p>
+    <hr class="divider">
 
-  <p>On the domestic front, the Justice Department has opened a criminal investigation touching on the network of donors who helped fund E. Jean Carroll's civil lawsuits against President Trump. The probe, confirmed by NBC News, focuses on a nonprofit connected to tech billionaire Reid Hoffman, whose charitable vehicles contributed to Carroll's legal costs. The investigation raises questions about whether the donations ran afoul of laws governing the use of nonprofit funds in civil litigation. Meanwhile, a federal judge in Washington declined to temporarily block Trump's executive order restricting mail-in voting, ruling that the harms alleged by challengers remained too speculative to warrant emergency relief at this stage of the litigation. The order itself remains in effect as the underlying case proceeds.</p>
+    <p>Good morning, it's Friday, May 29, 2026.</p>
 
-  <p>Elsewhere in the world, Kenya's High Court stepped in to pause a U.S. plan to establish a quarantine facility on Kenyan soil for Americans who may have been exposed to Ebola, ordering the government to halt the project until petitions against it are heard next Tuesday. A Kenyan doctors' union issued a 48-hour strike notice in protest, signaling that the dispute could escalate quickly. And in a development with long-range strategic implications, satellite imagery analysis revealed that China has constructed a military complex featuring more than eighty launch pads situated near its longest-range missile silos — a development that U.S. defense officials said underscored the accelerating pace of Beijing's nuclear modernization. In a brief moment of openness abroad, Iranians began slowly regaining internet access after authorities lifted a months-long digital blackout, though users reported that service remained slow and spotty, with platforms like YouTube and Instagram heavily restricted.</p>
+    <p>The war between the United States and Iran may be entering its final chapter — though that chapter has been tantalizingly close for days. Treasury Secretary Scott Bessent said this morning that the two sides are within reach of a memorandum of understanding that would extend the ceasefire by sixty days, reopen the Strait of Hormuz to free shipping, and open formal negotiations on Iran's nuclear program. Negotiators reached a tentative agreement overnight, according to Axios, but President Trump has not yet given his final approval. The proposed MOU would include an Iranian commitment not to pursue a nuclear weapon and would put the disposal of Tehran's highly enriched uranium at the top of the sixty-day agenda. In exchange, the United States would discuss sanctions relief and the release of frozen Iranian funds. There are complications: two skirmishes occurred in the strait in the past forty-eight hours even as talks continued, and the State and Treasury Departments announced new sanctions on Iran's oil trade simultaneously with the negotiations — a sign of just how fragile the diplomatic moment remains. Silver prices opened higher this morning on news of a potential truce extension, reflecting how tightly global commodity markets are still tracking every development in the Gulf.</p>
 
-  <p>In a lighter close: Happy, a beloved Asian elephant at the Bronx Zoo who spent decades providing researchers with rare insight into animal cognition and became the central figure in a landmark animal rights case testing whether elephants could be granted personhood, was euthanized at age 55. She was by most accounts a gentle and intelligent creature who spent her final years at the center of a profound philosophical debate about the boundaries of rights and recognition. And in Israel, a quiet milestone: after a long campaign, women will now be permitted to sit for the rabbinical certification examinations previously open only to Orthodox Jewish men — a small but symbolically significant step in an ongoing conversation about gender and religious authority.</p>
+    <p>Israel presented its own set of complications this morning. Prime Minister Benjamin Netanyahu announced that Israel intends to expand its military control to seventy percent of Gaza, a move that would significantly shrink the territory still under Hamas influence. Separately, Israel announced it is severing ties with United Nations Secretary-General António Guterres after the U.N. placed Israel on a blacklist related to alleged sexual violence against Palestinian detainees — a decision Israel's U.N. ambassador called unacceptable. And on Israel's northern border, the military has identified Hezbollah's one-way drone campaign as its most pressing tactical threat, eclipsing the antitank missiles that had long defined that front.</p>
 
-  <p class="closing">That's your briefing for this morning.</p>
+    <p>A Russian drone struck an apartment building in Romania overnight — a NATO member state — prompting the alliance to condemn what it called Russia's "recklessness." Meanwhile, Ukrainian long-range drone strikes have now knocked out roughly a quarter of Russia's total oil refining capacity, forcing Moscow toward a comprehensive ban on diesel and aviation fuel exports. A Russian tanker that had been carrying over two hundred thousand barrels of diesel toward Cuba has reversed course, leaving the fuel-starved island's energy crisis unresolved.</p>
 
-  <footer>Morning Briefing &mdash; Friday, May 29, 2026 &mdash; Compiled from public reporting</footer>
+    <p>On the domestic front, the New York Times published an investigation into the Lincoln Memorial Reflecting Pool renovation that raises significant questions about contracting practices. Reporter David Fahrenthold found that the contract was awarded without competitive bidding, that the contractor's profit margin runs to twenty percent — well above the six-to-twelve percent typical for federal construction — and that the final cost has settled at $13.1 million, roughly seven times what the president initially said it would cost. Efforts to seal the pool's bottom have already failed once, and the waterproof paint applied in "American Flag blue" has bubbled and developed holes in places. Trump wants the renovation finished for the country's two-hundred-and-fiftieth birthday celebration in July. Treasury Secretary Bessent also announced the design of a $250 bill bearing the president's image — congressional approval would be required for it to become legal tender. And the Pentagon announced a $9.7 billion contract with Dell Technologies; Trump, who purchased more than one million dollars of Dell stock this year, stands to benefit financially.</p>
 
-</div>
+    <p>The FBI arrested a CIA official after investigators found forty million dollars' worth of gold bars in his Virginia home. The case involves theft from CIA storage and false statements to investigators. Separately, a Blue Origin rocket being tested at the company's Florida facility exploded on the launchpad this morning, sending a tower of flames into the sky. Jeff Bezos said no one was hurt. The explosion dealt a fresh setback to the space company, which has long trailed SpaceX in launch tempo and reliability.</p>
+
+    <p>New census data released today in Japan confirms what demographers have been warning about for years: the country's 2025 census shows a population of 123 million, down 3.09 million — a 2.5 percent decline — from five years ago. It is the steepest drop since Japan began conducting a national census in 1920, and more than triple the rate of decline recorded in the previous cycle. Only Tokyo and Okinawa grew. The child population has fallen to an all-time low of 13.3 million, just 10.8 percent of the total. The numbers are a stark illustration of the demographic gravity pulling at the world's fourth-largest economy.</p>
+
+    <p>In economic news, the Wall Street Journal's lead story this morning examines a quieter crisis: Americans are falling behind on a collective $1.25 trillion credit-card bill. The convergence of persistent inflation and high interest rates is pushing more households into what analysts are calling "survival debt" — carrying balances not as a financial strategy but because there is no other option. The dynamic helps explain a data point the Journal also highlighted: labor's share of economic output just hit an all-time low, while the corporate profit share is near a record high. That divergence — strong earnings, miserable consumers — is the defining tension in the current economy. The AI sector adds another layer: corporate America is beginning to ration AI spending as the cost of the necessary computing infrastructure has grown large enough to require executive scrutiny.</p>
+
+    <p>Anthropic has surpassed OpenAI as the most valuable artificial intelligence company. CBS News, under its new editor in chief Bari Weiss, is overhauling "60 Minutes": two on-air correspondents have been fired, and former New York Times technology columnist Nick Bilton has been hired to run the program. The Supreme Court sided with a Black death row inmate from Mississippi who accused a white prosecutor of illegally striking Black jurors from his panel. Victor Wembanyama scored twenty-eight points as the San Antonio Spurs defeated Oklahoma City 118–91 in Game 6, sending the Western Conference Finals to a deciding Game 7. And Claude Lemieux — four-time Stanley Cup champion and one of the most ferocious playoff performers in NHL history — died at age sixty. Happy the elephant, who had lived at the Bronx Zoo since the 1970s and became famous for passing the mirror self-awareness test, was euthanized at fifty-five after a decline in health.</p>
+
+    <p>Paul McCartney turns the page on a busy week: his new album, "The Boys of Dungeon Lane," inspired by his Liverpool childhood, releases today at age eighty-three. At Roland Garros, world No. 1 Jannik Sinner — on a thirty-match winning streak — was upset by Argentine qualifier Juan Manuel Cerúndolo after leading two sets to love and serving for the match, apparently undone by ninety-degree Paris heat. And the Scripps National Spelling Bee wraps up its final rounds today in Washington.</p>
+
+    <div class="closing">That's your briefing for this morning.</div>
+  </div>
 </body>
 </html>

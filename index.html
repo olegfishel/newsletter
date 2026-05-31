@@ -1,99 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Morning Briefing — Sunday, May 31, 2026</title>
-  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Georgia&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morning Briefing — May 31, 2026</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Georgia:ital,wght@0,400;0,700;1,400&display=swap');
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      background-color: #fdf6ee;
+      background-color: #f5f0e8;
       color: #2c2c2c;
       font-family: Georgia, 'Times New Roman', serif;
       font-size: 18px;
-      line-height: 1.8;
-      margin: 0;
-      padding: 40px 20px 80px;
+      line-height: 1.75;
+      padding: 40px 20px 60px;
     }
-    .container {
-      max-width: 780px;
-      margin: 0 auto;
-    }
-    .dateline {
-      font-variant: small-caps;
-      letter-spacing: 0.12em;
-      font-size: 0.78em;
-      color: #7a6650;
+
+    .container { max-width: 780px; margin: 0 auto; }
+
+    .masthead {
       text-align: center;
-      margin-bottom: 6px;
+      border-top: 3px solid #8b0000;
+      border-bottom: 1px solid #8b0000;
+      padding: 18px 0 14px;
+      margin-bottom: 10px;
     }
-    h1 {
-      font-family: Georgia, serif;
-      font-size: 2em;
+
+    .masthead h1 {
+      font-size: 13px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #8b0000;
       font-weight: normal;
+    }
+
+    .dateline {
+      font-size: 28px;
+      font-weight: bold;
       text-align: center;
-      margin: 0 0 8px;
-      line-height: 1.25;
+      margin: 16px 0 6px;
       color: #1a1a1a;
     }
+
     .source-note {
-      font-size: 0.72em;
-      color: #8a7460;
+      font-size: 12px;
       text-align: center;
+      color: #666;
       font-style: italic;
-      margin-bottom: 36px;
-      border-bottom: 1px solid #ddd0be;
-      padding-bottom: 18px;
+      margin-bottom: 28px;
+      letter-spacing: 0.03em;
     }
-    p {
-      margin: 0 0 1.4em;
-      text-align: justify;
+
+    .wsj-block {
+      background-color: #eee8d8;
+      border-left: 4px solid #8b0000;
+      padding: 20px 24px;
+      margin: 0 0 16px 0;
+      border-radius: 2px;
     }
-    p:first-of-type::first-letter {
-      font-size: 3.2em;
-      float: left;
-      line-height: 0.78;
-      margin: 6px 6px 0 0;
-      color: #7a6650;
-      font-family: Georgia, serif;
+
+    .wsj-block h2 {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #8b0000;
+      font-weight: normal;
+      margin-bottom: 14px;
     }
+
+    .wsj-block .section-label, .sdut-block .section-label {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #666;
+      font-weight: bold;
+      margin: 14px 0 6px;
+    }
+
+    .wsj-block ul, .sdut-block ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .wsj-block ul li, .sdut-block ul li {
+      font-size: 15px;
+      line-height: 1.6;
+      padding: 5px 0;
+      border-bottom: 1px dotted #c9b99a;
+      color: #2c2c2c;
+    }
+
+    .wsj-block ul li:last-child, .sdut-block ul li:last-child { border-bottom: none; }
+
+    .wsj-block .footnote {
+      font-size: 11px;
+      color: #888;
+      font-style: italic;
+      margin-top: 12px;
+    }
+
+    .sdut-block {
+      background-color: #e8edf5;
+      border-left: 4px solid #1a3a6b;
+      padding: 20px 24px;
+      margin: 0 0 32px 0;
+      border-radius: 2px;
+    }
+
+    .sdut-block h2 {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #1a3a6b;
+      font-weight: normal;
+      margin-bottom: 14px;
+    }
+
+    .sdut-block ul li { border-bottom-color: #b0bcd4; }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #c9b99a;
+      margin: 32px 0;
+    }
+
+    p { margin-bottom: 1.3em; }
+
     .closing {
       text-align: center;
       font-style: italic;
-      color: #7a6650;
+      color: #555;
       margin-top: 40px;
-      font-size: 1em;
-      border-top: 1px solid #ddd0be;
       padding-top: 20px;
+      border-top: 1px solid #c9b99a;
+      font-size: 17px;
     }
   </style>
 </head>
 <body>
   <div class="container">
+
+    <div class="masthead"><h1>Morning Briefing</h1></div>
     <div class="dateline">Sunday, May 31, 2026</div>
-    <h1>Morning Briefing</h1>
-    <div class="source-note">
-      Sourced from The Wall Street Journal, The New York Times, and updated with reporting from
-      NPR, PBS NewsHour, Reuters, Bloomberg, Axios, The Irish Times, Military Times, and the World Health Organization
+    <div class="source-note">Sourced from The Wall Street Journal, The New York Times, San Diego Union-Tribune, and updated with reporting from Reuters, PBS NewsHour, NPR, and Bloomberg</div>
+
+    <div class="wsj-block">
+      <h2>WSJ · What's News · May 31, 2026</h2>
+
+      <div class="section-label">Business &amp; Finance</div>
+      <ul>
+        <li>Bill Gates's carefully crafted image is cracking — Epstein association and admission of affairs fuel a 40%+ surge in critical news coverage; Gates snubbed from Microsoft CEO summit and Berkshire Hathaway annual meeting</li>
+        <li>Nearly half of all home-insurance claims now result in zero payout, up from 36% a decade ago, as insurers tighten scrutiny after years of losses</li>
+        <li>Fed Chairman Warsh urges central bank to weight alternative inflation measures like the "trimmed mean" — turning an academic debate into live policy</li>
+        <li>AI investors hunt the next bottleneck in the stack — Nvidia up 15x since ChatGPT; new competition from Amazon, Alphabet, and Cerebras chips</li>
+        <li>Golf is getting cooler and younger — the stock market has taken notice</li>
+        <li>Farm families are making more from social media "aginfluencer" posts than from actual crops in a brutal year for grain prices</li>
+        <li>NBA Finals begin Wednesday: Knicks vs. Spurs; May jobs report due Friday</li>
+      </ul>
+
+      <div class="section-label">World-Wide</div>
+      <ul>
+        <li>Trump met with advisers Saturday for a "final determination" on the Iran deal — still has not signed; U.S. struck a ship heading for Iran</li>
+        <li>Israel launches strikes near Krak des Chevaliers castle in Lebanon</li>
+        <li>Trump not committed to anointing JD Vance as his successor, adding tension to their relationship</li>
+        <li>Republican "wounded bear caucus" grows — intraparty foes with nothing left to lose are becoming a new opposition bloc</li>
+        <li>African nations rejecting U.S. health aid, outraged by demands for private health records and mineral rights in exchange for medicine</li>
+        <li>Drone strike hits turbine building at Ukraine's Zaporizhzhia nuclear power plant</li>
+        <li>U.S. planning to accelerate withdrawal of troops from European NATO bases — proposals to be presented to allies next month</li>
+        <li>Maine Senate Democrat Graham Platner's campaign in turmoil — his wife revealed he sent explicit texts to multiple women</li>
+      </ul>
+      <div class="footnote">WSJ Print Edition email not received by press time; What's News compiled from WSJ 10-Point (May 31).</div>
     </div>
 
-    <p>Good morning, it's Sunday, May 31, 2026. The question hanging over the weekend is whether the United States and Iran can finally close a deal to end a war that has roiled global energy markets and rattled the Middle East for nearly three months — and this morning that answer remains conspicuously elusive. President Trump ended a Friday session in the White House Situation Room without announcing his decision on a proposed ceasefire framework that American and Iranian negotiators say is largely agreed upon. The draft deal as it now stands would formalize a 60-day ceasefire extension, reopen the Strait of Hormuz to international shipping, lift a range of oil sanctions on Tehran in exchange for a commitment not to pursue nuclear weapons, and begin negotiations on how to dispose of Iran's stockpile of highly enriched uranium. But the two sides remain sharply divided on several points: Trump has insisted that the uranium be destroyed outright, while Tehran's state media has emphasized that the most important provision for Iran is the immediate release of roughly $12 billion in frozen assets. Adding to the tension on Saturday, Iran's Revolutionary Guard claimed to have shot down a United States MQ-1 Predator drone it described as conducting hostile operations above Iranian territorial waters near Bushehr — an assertion the Pentagon did not immediately confirm or deny. American forces separately disabled a Gambia-flagged commercial vessel in the Gulf of Oman that U.S. officials said was attempting to reach an Iranian port in apparent defiance of the blockade. The accumulated pressure of those incidents left diplomats scrambling through the weekend, with Trump having publicly stated he is in no hurry to conclude an agreement even as his own negotiators warn that the window for a deal is not unlimited.</p>
+    <div class="sdut-block">
+      <h2>San Diego Union-Tribune · May 31, 2026</h2>
 
-    <p>At Europe's most consequential nuclear site, alarm bells sounded once more on Saturday when a drone struck the turbine building at the Zaporizhzhia nuclear power plant in Russian-occupied southeastern Ukraine, leaving a visible hole in an outer wall. Russia's state nuclear corporation Rosatom blamed Ukrainian forces, a charge Kyiv categorically denied, pointing to its longstanding policy against targeting nuclear infrastructure. The International Atomic Energy Agency, whose monitoring team is stationed at the plant, said all safety systems remained operational and that no radiation leak had been detected, but Director General Rafael Grossi renewed his warning that attacks near the facility amount to playing with fire. The agency said the strike was the first breach of the plant's perimeter since April 2024 and is seeking immediate access to inspect the full extent of the damage. The incident arrives at a particularly fraught moment as Ukraine enters its fourth summer of war, with Russia continuing to push along a grinding front line and European governments wrestling with the next phase of military support.</p>
+      <div class="section-label">Today's Headlines</div>
+      <ul>
+        <li>'We must find a greater love' — community hopes to heal in wake of deadly mosque attack at the Islamic Center of San Diego</li>
+        <li>Will court settle county agencies' dispute?</li>
+        <li>Millions in vacation rental tax still owed to county</li>
+        <li>North County contest to help decide control of Congress</li>
+        <li>U.S. says it struck ship heading for Iran</li>
+        <li>Israel launches strikes near castle in Lebanon</li>
+        <li>Trump vents about judge who blocked the Kennedy Center fixes</li>
+      </ul>
 
-    <p>That last concern took on fresh urgency this weekend when Germany's Welt am Sonntag reported that the Trump administration plans to accelerate the withdrawal of American troops from its European bases and will formally present the proposals to NATO allies in June. The administration previously announced it would pull roughly 5,000 soldiers from Germany — the largest U.S. military presence on the continent at about 35,000 troops — and senior Pentagon officials have suggested further reductions beyond that initial cohort are under active consideration. NATO Supreme Allied Commander Gen. Alexus Grynkewich acknowledged this week that additional drawdowns are likely as the alliance presses European members to assume a greater share of their own defense, but several American lawmakers and European officials warned that the move risks emboldening Moscow at the worst possible moment. The announcement is expected to dominate the agenda when NATO defense ministers convene next month.</p>
+      <div class="section-label">Local</div>
+      <ul>
+        <li>Funding sought to save lagoon on Carlsbad-Oceanside border</li>
+        <li>Former food workers now at front line of patient safety</li>
+        <li>Agent accuses S.D. police of cover-up</li>
+        <li>Homeless outreach goes from HOT to HEART</li>
+      </ul>
 
-    <p>Half a world away, the World Health Organization confirmed that the Ebola outbreak spreading across the Democratic Republic of Congo and into Uganda has now crossed one thousand suspected cases, prompting WHO Director-General Tedros Adhanom Ghebreyesus to travel personally to DRC's Ituri province on Saturday to stand alongside overwhelmed health workers. The outbreak, caused by the Bundibugyo strain of Ebola — a variant for which no approved vaccine or specific treatment yet exists — was declared a Public Health Emergency of International Concern by the WHO on May 17. As of the latest figures, confirmed cases across both countries stand in the hundreds, with deaths rising in areas already destabilized by armed conflict and limited infrastructure. Tedros called on wealthy nations and international donors to dramatically accelerate funding and supply chains, warning that the response is visibly lagging behind the disease's spread through densely populated trading routes.</p>
+      <div class="section-label">Sports</div>
+      <ul>
+        <li>Steele Canyon surges to third section crown</li>
+        <li>A blast at last for Tatis, but it's still a loss</li>
+        <li>Madison snaps its 50-year CIF title drought in thriller</li>
+        <li>Wemby, Spurs knock out the champs</li>
+        <li>Defending champion Gauff hits end of road in Paris</li>
+        <li>Padres at Nationals</li>
+        <li>NBA Finals: Knicks at Spurs</li>
+      </ul>
+    </div>
 
-    <p>In South America, Colombians are casting ballots today in the first round of a presidential election to choose a successor to leftist President Gustavo Petro, whose term ends this summer. The vote is taking place under a heightened security posture after a spate of political violence in recent weeks. The leading candidate heading into polling day was the leftist Ivan Cepeda, though pre-election surveys showed him comfortably ahead but short of the absolute majority required to avoid a runoff. Right-leaning Abelardo de la Espriella and center-right Paloma Valencia round out a crowded field. Should no candidate break fifty percent — which polls suggest is the likely outcome — a second round will be held June 21.</p>
+    <hr class="divider">
 
-    <p>In Lebanon, Israel has quietly extended its military footprint in the south, repositioning operational lines roughly seven miles further north toward the Zahrani River, with Israeli forces issuing evacuation warnings to residents in newly affected zones. The move suggests that Israeli commanders see the current ceasefire framework — already under strain — as something less than permanent, and it has drawn pointed objections from Lebanese officials who say it violates the terms of last year's American-brokered agreement. Meanwhile, in the Pacific, Philippine Defence Secretary Gilberto Teodoro pushed back against any suggestion that recent diplomatic progress between Washington and Beijing has reduced his country's exposure to Chinese pressure, declaring that the Philippines remains under a severe threat and calling for sustained U.S. engagement in the region.</p>
+    <p>Good morning, it's Sunday, May 31, 2026.</p>
 
-    <p>In European street politics, thousands of Austrian protesters brought the Brenner motorway to a standstill on Saturday, blocking one of the Alps' busiest north-south arteries in protest against relentless congestion from heavy freight traffic and seasonal tourism. The demonstration underscored long-running frustration in Alpine communities squeezed between the competing demands of European commerce and livability — a grievance that has found little resolution in Brussels despite years of lobbying by affected municipalities.</p>
+    <p>Here in San Diego, the community is still absorbing the shock of the May 18th attack at the Islamic Center of San Diego — the city's largest mosque — in which two teenage gunmen killed a security guard and two congregants before turning their weapons on themselves. The shooting, which authorities are investigating as a hate crime, left a handwritten manifesto echoing the language of the 2019 Christchurch attacks. The Union-Tribune leads this morning with the community's long road back: families of the deceased have returned to the mosque for prayers, and local Muslim leaders are calling for what they describe as "a greater love" as they begin the process of mourning and healing.</p>
 
-    <p>On the lighter side of the weekend, soccer's marquee club competition ended in drama in Budapest as Paris Saint-Germain claimed back-to-back UEFA Champions League titles by defeating Arsenal on penalties after the two sides played to a tense 1-1 draw. The victory, secured at the Puskas Arena, prompted massive celebrations in Paris — and, somewhat less cheerfully for the French authorities, the detention of hundreds of supporters whose post-match exuberance spilled into disorder on the streets. And in New England, early risers were startled before dawn when a fragmenting meteor produced a series of sonic booms audible across much of Massachusetts and neighboring states — a reminder, however brief and bright, that some surprises still arrive from well beyond the headlines.</p>
+    <p>On the national stage, the Iran deal remained unsigned heading into Sunday morning. President Trump convened his top advisers Saturday for what aides described as a "final determination" meeting on whether to approve the proposed sixty-day memorandum of understanding. He left without signing it, and U.S. forces struck a vessel heading for Iran — the latest in a series of military actions that have continued even as diplomats circulate the same framework text. Israel, for its part, launched strikes near the medieval Krak des Chevaliers castle in Lebanon, a signal that the broader regional conflict is far from contained even with a potential ceasefire under discussion.</p>
 
-    <p class="closing">That's your briefing for this morning.</p>
+    <p>The Wall Street Journal's lead story this morning is a careful piece of reputation journalism: Bill Gates, who for years maintained one of the most carefully managed public images in philanthropy and business — his staff kept a custom-size mannequin to test his outfits — is now watching that image visibly erode. The proximate cause is the release of Jeffrey Epstein files, which documented Gates meeting with Epstein and posing for photographs with women in his orbit. Gates apologized to Gates Foundation staff and acknowledged two affairs, one with a Russian bridge player and one with a Russian nuclear physicist. A media analysis commissioned by the foundation found a forty-percent-plus surge in critical coverage since the files were released. Gates has now been quietly disinvited from Microsoft's annual CEO summit — a gathering he helped build — and from the Berkshire Hathaway annual meeting, which he had attended for years.</p>
+
+    <p>Inside the White House, two tensions are drawing attention. Trump has not committed to positioning Vice President JD Vance as his political heir, and people close to both men say the uncertainty is straining their relationship. And a new faction is forming within the Republican Party — what the Journal calls a "wounded bear caucus" — an expanded group of GOP lawmakers who feel they have little left to lose politically and are increasingly willing to break with the White House. The $1.8 billion anti-weaponization fund, meanwhile, is drawing scrutiny from a different direction: a Times investigation found it was structured by lawyers with close presidential ties in a way that would benefit Trump's allies and provide him personal tax advantages.</p>
+
+    <p>OpenAI and Anthropic are spending heavily on this year's midterm elections — and, in a notable twist, are mostly attacking each other in their political advertising. The AI industry's entry into electoral politics is being watched closely given both companies' stated positions on AI governance. Separately, a drone struck a turbine building at Ukraine's Zaporizhzhia nuclear power plant over the weekend, leaving a hole in the wall, according to the International Atomic Energy Agency. And in a significant signal about the future of the NATO alliance, the United States is planning to accelerate the withdrawal of troops from its European bases, with proposals set to be presented to allies next month — a move that has already alarmed capitals in eastern Europe.</p>
+
+    <p>A handful of African nations are refusing American health aid, citing Trump administration demands that countries provide access to private citizen health records and, in some cases, mineral rights, as conditions for receiving lifesaving medicine. The story has received relatively little coverage but carries significant humanitarian stakes across a continent where U.S. health funding has historically had outsized impact. In the Democratic Republic of Congo, the WHO Director-General traveled personally to the Ebola-stricken Ituri province this weekend, urging residents to seek treatment early and follow safe burial practices as confirmed cases surpass one thousand.</p>
+
+    <p>The San Antonio Spurs are headed to the NBA Finals. Victor Wembanyama led them past the Oklahoma City Thunder 111-103 in a Game 7 on Saturday night, setting up the Finals matchup with the New York Knicks that fans have been anticipating since early in the playoffs. The series tips off Wednesday. In Paris, PSG won the UEFA Champions League, defeating Arsenal 4-3 on penalties after a 1-1 draw — ending what had been a deeply emotional run for Arsenal, who won their first Premier League title in twenty-two years but could not complete the double. Coco Gauff's defense of her French Open title ended in the third round, beaten by Anastasia Potapova in a day full of upsets at Roland Garros.</p>
+
+    <p>The New York Times Magazine leads this morning with a strange and genuinely thought-provoking piece about Tilly Norwood, billed as the world's first AI actress. Tilly can work on demand, never ages, and delivers any performance asked of her. But reporter Taffy Brodesser-Akner, who has interviewed some of Hollywood's biggest stars, found that when she sat quietly to let her subject open up, Tilly simply waited. And waited. The piece ends as a meditation on what that silence revealed — not about artificial intelligence, but about what makes human storytelling irreplaceable.</p>
+
+    <div class="closing">That's your briefing for this morning.</div>
+
   </div>
 </body>
 </html>

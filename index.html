@@ -1,95 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Morning Briefing – June 1, 2026</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morning Briefing — June 1, 2026</title>
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    @import url('https://fonts.googleapis.com/css2?family=Georgia:ital,wght@0,400;0,700;1,400&display=swap');
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      background-color: #fdf6ee;
+      background-color: #f5f0e8;
       color: #2c2c2c;
       font-family: Georgia, 'Times New Roman', serif;
       font-size: 18px;
-      line-height: 1.8;
-      padding: 48px 24px 80px;
+      line-height: 1.75;
+      padding: 40px 20px 60px;
     }
-    .container {
-      max-width: 780px;
-      margin: 0 auto;
-    }
-    .dateline {
-      font-family: Georgia, serif;
-      font-variant: small-caps;
-      font-size: 0.85em;
-      letter-spacing: 0.12em;
-      color: #7a6a55;
+
+    .container { max-width: 780px; margin: 0 auto; }
+
+    .masthead {
       text-align: center;
+      border-top: 3px solid #8b0000;
+      border-bottom: 1px solid #8b0000;
+      padding: 18px 0 14px;
       margin-bottom: 10px;
     }
-    h1 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-weight: 600;
-      font-size: 2em;
-      line-height: 1.25;
+
+    .masthead h1 {
+      font-size: 13px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #8b0000;
+      font-weight: normal;
+    }
+
+    .dateline {
+      font-size: 28px;
+      font-weight: bold;
       text-align: center;
+      margin: 16px 0 6px;
       color: #1a1a1a;
-      margin-bottom: 8px;
     }
+
     .source-note {
-      font-size: 0.75em;
-      color: #9a8a77;
+      font-size: 12px;
       text-align: center;
+      color: #666;
       font-style: italic;
-      margin-bottom: 40px;
-      line-height: 1.5;
+      margin-bottom: 28px;
+      letter-spacing: 0.03em;
     }
+
+    .wsj-block {
+      background-color: #eee8d8;
+      border-left: 4px solid #8b0000;
+      padding: 20px 24px;
+      margin: 0 0 16px 0;
+      border-radius: 2px;
+    }
+
+    .wsj-block h2 {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #8b0000;
+      font-weight: normal;
+      margin-bottom: 14px;
+    }
+
+    .wsj-block .section-label, .sdut-block .section-label {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #666;
+      font-weight: bold;
+      margin: 14px 0 6px;
+    }
+
+    .wsj-block ul, .sdut-block ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .wsj-block ul li, .sdut-block ul li {
+      font-size: 15px;
+      line-height: 1.6;
+      padding: 5px 0;
+      border-bottom: 1px dotted #c9b99a;
+      color: #2c2c2c;
+    }
+
+    .wsj-block ul li:last-child, .sdut-block ul li:last-child { border-bottom: none; }
+
+    .wsj-block .footnote {
+      font-size: 11px;
+      color: #888;
+      font-style: italic;
+      margin-top: 12px;
+    }
+
+    .sdut-block {
+      background-color: #e8edf5;
+      border-left: 4px solid #1a3a6b;
+      padding: 20px 24px;
+      margin: 0 0 32px 0;
+      border-radius: 2px;
+    }
+
+    .sdut-block h2 {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #1a3a6b;
+      font-weight: normal;
+      margin-bottom: 14px;
+    }
+
+    .sdut-block ul li { border-bottom-color: #b0bcd4; }
+
     .divider {
       border: none;
-      border-top: 1px solid #d9cdbf;
+      border-top: 1px solid #c9b99a;
       margin: 32px 0;
     }
-    p {
-      margin-bottom: 1.4em;
-    }
+
+    p { margin-bottom: 1.3em; }
+
     .closing {
       text-align: center;
       font-style: italic;
-      color: #7a6a55;
+      color: #555;
       margin-top: 40px;
-      font-size: 0.95em;
+      padding-top: 20px;
+      border-top: 1px solid #c9b99a;
+      font-size: 17px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <p class="dateline">Monday, June 1, 2026</p>
-    <h1>Morning Briefing</h1>
-    <p class="source-note">Sourced from The Wall Street Journal, The New York Times, and updated with reporting from Bloomberg, Reuters, NBC News, NPR, Axios, and PBS NewsHour</p>
-    <hr class="divider" />
 
-    <p>Good morning, it's Monday, June 1, 2026.</p>
+    <div class="masthead"><h1>Morning Briefing</h1></div>
+    <div class="dateline">Monday, June 1, 2026</div>
+    <div class="source-note">Sourced from The Wall Street Journal, The New York Times, San Diego Union-Tribune, and updated with reporting from NPR, France 24, Stars and Stripes, and Reuters</div>
 
-    <p>The Middle East enters a new and more dangerous phase this morning. Israel's ground offensive in Lebanon has widened sharply over the weekend, with Israeli forces crossing the Litani River and seizing Beaufort Castle, the ancient Crusader fortress that dominates the southern Lebanese highlands. Prime Minister Benjamin Netanyahu announced that he had personally ordered the military to expand its maneuver in Lebanon, describing the castle's capture as "a dramatic change" in the campaign. Israeli Defense Minister Israel Katz framed what is now effectively a permanent occupation of the area: the Israeli flag, he said, has been planted, and it will stay. Lebanese Prime Minister Nawaf Salam has accused Israel of a scorched-earth policy and called on the international community to intervene; France's Emmanuel Macron condemned the fresh advance as a major escalation that "nothing justifies," and Berlin has issued its own stark warning that a wider offensive threatens to push a volatile region toward deeper crisis.</p>
+    <div class="wsj-block">
+      <h2>WSJ · What's News · June 1, 2026</h2>
 
-    <p>The timing is particularly fraught. Even as Israeli forces push north, American and Iranian diplomats are racing to finalize a fragile memorandum of understanding that would extend the existing ceasefire and reopen the Strait of Hormuz. President Trump reportedly spent a Situation Room meeting last Friday demanding tougher language around Iran's nuclear commitments before he would endorse the framework. Secretary of Defense Pete Hegseth made clear over the weekend that Washington is prepared to resume strikes on Iran if the talks collapse. American forces have already conducted what the Pentagon described as self-defense strikes on Iranian radar and command centers following the shootdown of US drones over international waters, and Iran's Islamic Revolutionary Guard claimed retaliatory strikes on a US air base in response. The ceasefire is holding by the barest of margins. Netanyahu's insistence on pushing deeper into Lebanon — where Hezbollah, one of Iran's closest partners, is under assault — complicates both Washington's and Tehran's ability to sell any deal back home.</p>
+      <div class="section-label">Business &amp; Finance</div>
+      <ul>
+        <li>S&amp;P 500 and Nasdaq near all-time records — AI chip frenzy has powered one of the best two-month market runs in history</li>
+        <li>Berkshire Hathaway agrees to buy homebuilder Taylor Morrison for $6.8 billion — Greg Abel's first major move as Buffett's successor</li>
+        <li>OpenAI vs. Anthropic IPO race: first to market gains a significant advantage, WSJ reports</li>
+        <li>Nvidia unveils the first personal laptops designed for running AI agents</li>
+        <li>California gubernatorial primary today: Becerra (25%), Hilton (21%), Steyer (19%) in a three-way race</li>
+        <li>About 25% of midcareer professionals hit a career plateau of five or more years with no pay or position boost</li>
+        <li>WSJ Global Food Forum kicks off in Chicago; Hewlett Packard Enterprise reports earnings</li>
+      </ul>
 
-    <p>In Gaza, the violence continued without pause. An Israeli airstrike struck a café in the territory, killing several Palestinians; soldiers on the ground expressed confusion about the rules of engagement, with some questioning whether any ceasefire framework remains legitimate. The humanitarian situation remains catastrophic, and international pressure for a durable agreement continues to build with little sign of resolution.</p>
+      <div class="section-label">World-Wide</div>
+      <ul>
+        <li>U.S. struck Iranian air-defense radar and drone sites; Kuwait attacked in Iranian retaliation; Trump's Abraham Accords demand is complicating peace talks</li>
+        <li>Israel captures Beaufort Castle in Lebanon — deepest incursion in 26 years; Netanyahu orders expanded operations; Tyre and Nabatiyeh now under threat</li>
+        <li>Trump's latest physical exam memo lacks cardiovascular details, doctors say</li>
+        <li>Taiwan's KMT opposition leader arrives in U.S. with a Beijing-aligned message, complicating the U.S.-China relationship</li>
+        <li>Justice Department ramps up investigations of Trump's perceived enemies — more than four dozen people in the crosshairs</li>
+        <li>JD Vance courts Teamsters with pro-labor positions, positioning for 2028</li>
+      </ul>
+      <div class="footnote">WSJ Print Edition email not received by press time; What's News compiled from WSJ 10-Point (June 1).</div>
+    </div>
 
-    <p>On the European front, Ukraine's sanctions envoy disclosed that fragments recovered from a Russian Oreshnik ballistic missile contained Belarusian microchips, adding new evidence of Minsk's direct material contribution to Moscow's war effort and prompting fresh calls from Kyiv for tighter Western sanctions enforcement against Belarus. The revelation comes as the war grinds into its fourth year with no credible diplomatic pathway in sight.</p>
+    <div class="sdut-block">
+      <h2>San Diego Union-Tribune · June 1, 2026</h2>
 
-    <p>Back in Washington, the Trump administration suffered a notable legal setback on Friday when a federal judge ruled that the president's effort to attach his name to the Kennedy Center is illegal. US District Judge Christopher Cooper ordered that all signage and digital materials referring to the "Donald J. Trump and John F. Kennedy Memorial Center for the Performing Arts" be removed within fourteen days, writing that Congress gave the center its name at its founding and only Congress can change it. The judge also halted a planned two-year closure for renovation that had been scheduled to begin next month. Trump responded by saying he now has "no interest" in the center's renovation. The ruling adds to a growing stack of courtroom losses for the administration as the November midterms approach and Republican incumbents in competitive districts grow increasingly uneasy. Analysts say rising gasoline prices — a direct consequence of the Iran war — have emerged as the primary political vulnerability for the party heading into the fall campaign.</p>
+      <div class="section-label">Today's Headlines</div>
+      <ul>
+        <li>Rockin' racers</li>
+        <li>Analysis finds city's bridges need $39 million in repairs</li>
+        <li>City must pay $16M over parking fines</li>
+        <li>Coalition: 85% of water should be from local area</li>
+        <li>Federal limits on food aid to begin today</li>
+        <li>U.S. boat strike toll tops 200 dead from 60 attacks</li>
+        <li>Israeli army takes strategic mountain, castle</li>
+      </ul>
 
-    <p>The erosion of the federal government's legal workforce is coming into sharper focus. More than ten thousand federal lawyers have left government service since the start of this year, departing amid deep staffing cuts and policy conflicts that have hollowed out agencies across the executive branch. Legal experts warn that the institutional capacity to manage complex litigation — including the administration's own immigration enforcement cases — is being degraded in ways that will take years to rebuild. Separately, a federal judge barred the launch of Trump's proposed $1.8 billion anti-weaponization fund pending a hearing scheduled for later this month. In Louisiana, state Republicans passed a redistricting plan that eliminates one Democratic majority-Black House district, a move widely expected to face immediate legal challenge under the Voting Rights Act.</p>
+      <div class="section-label">Local</div>
+      <ul>
+        <li>Hotel del Coronado debuts exhibit on Marilyn Monroe</li>
+        <li>Encinitas extends roadside dining, temporarily</li>
+        <li>S.D. jail has first suicide in 3 years</li>
+        <li>Push for Medal of Honor for Marine is renewed</li>
+        <li>Teen girl stabbed in class sues district</li>
+      </ul>
 
-    <p>On immigration, the Department of Homeland Security announced a quiet but potentially significant policy reversal, giving individual immigration officers discretion over whether green card applicants must travel overseas for processing — a change that could affect tens of thousands of people navigating the legal immigration system. In Minnesota, an ICE officer was charged with assault after allegedly shooting a Venezuelan immigrant. And the acting Customs and Border Protection chief is reportedly weighing whether to pull federal customs staff from Newark airport as protests intensify at detention facilities across the country.</p>
+      <div class="section-label">Sports</div>
+      <ul>
+        <li>An 'extremely frustrating' loss caps mediocre month for Padres</li>
+        <li>Henry, Cathedral on opposite sides of regional tourney</li>
+        <li>First half ends on high note for Wave in victory</li>
+        <li>Bogaerts approves of Tatis' play at second</li>
+        <li>Padres at Phillies</li>
+        <li>Gotham at Wave</li>
+        <li>Spurs, Knicks set for rematch of 1999</li>
+        <li>Playoff powerhouses Vegas, Carolina meet in Stanley Cup Final</li>
+      </ul>
+    </div>
 
-    <p>In business, commercial real estate data giant CoStar Group has agreed to acquire Zonda, a home construction data firm, for $800 million in cash — a signal of continued consolidation in the property analytics sector as mortgage rates remain elevated and new housing starts lag demand in most major markets. Globally, the economic picture remains subdued: world output is forecast to grow 2.7 percent this year, below the pre-pandemic average, while the US fiscal deficit is projected to widen to nearly 6 percent of GDP as spending commitments outpace revenues.</p>
+    <hr class="divider">
 
-    <p>Finally, a grim dispatch from Southeast Asia. An accidental detonation of mining materials in the village of Kaung Tat in Myanmar killed at least 55 people over the weekend. The explosion, which leveled homes near an active extraction site, is among the deadliest industrial accidents in the country in recent years. Rescue operations are ongoing as authorities work to account for dozens more who remain missing.</p>
+    <p>Good morning, it's Monday, June 1, 2026. Happy Pride Month.</p>
 
-    <p class="closing">That's your briefing for this morning.</p>
+    <p>The New York Times leads today with a story that deserves more attention than it has received: since September of last year, the United States military has been conducting a secret air campaign against small boats in the Caribbean Sea and eastern Pacific Ocean, striking more than sixty vessels and killing at least two hundred people. The missions, operated under the name Operation Southern Spear, involve attack planes and MQ-9 Reaper drones. The Trump administration, Defense Secretary Pete Hegseth, and U.S. Southern Command have been promoting the strikes on social media, presenting them as victories in the war on drugs. Colombian President Gustavo Petro has called them murder. Legal specialists in the laws of armed conflict have called them illegal extrajudicial killings, arguing that military force cannot legally target civilians — even criminals — unless they pose an imminent threat of violence. The White House's position is that the United States is in a legally recognized armed conflict with drug cartels and that boat crews are classified as combatants. The question of whether it is working has a cleaner answer: it isn't. Cocaine remains as available, as pure, and as cheap on American streets as it was before the campaign began. The head of U.S. Southern Command told the Senate Armed Services Committee in March that "boat strikes aren't the answer." The strikes continue anyway.</p>
+
+    <p>The Iran negotiations took another turbulent turn over the weekend. The United States struck what it described as Iranian air-defense radar and drone sites; Iran responded by attacking Kuwait, which hosts American military personnel. President Trump's insistence that any peace deal must include Gulf States signing the Abraham Accords — normalizing relations with Israel — is now a significant complicating factor that neither side anticipated when the framework talks began. Defense Secretary Hegseth warned publicly that Washington stands ready to resume full-scale strikes if negotiations collapse. The deal remains unsigned. About seventy commercial ships have transited the Strait of Hormuz with U.S. military escort over the past three weeks, a fragile workaround that keeps some global trade moving while the larger standoff continues.</p>
+
+    <p>In Lebanon, Israel has captured Beaufort Castle — a twelfth-century Crusader fortress on a strategic hilltop in southern Lebanon — in what Israeli officials called the deepest ground incursion into the country in twenty-six years. Israeli forces have now crossed the Litani River, which had served as an informal boundary, and Netanyahu has ordered expanded operations, describing the castle's capture as "a dramatic change" in the campaign. The Lebanese government says more than 1.2 million people have been displaced and more than 3,300 killed since the fighting began in March, when Hezbollah fired rockets into northern Israel following the U.S.-Israeli strikes on Iran. The city of Tyre — Lebanon's fourth-largest — and Nabatiyeh are now within Israeli operational range, and evacuation orders have been issued for surrounding areas.</p>
+
+    <p>Markets open this week near all-time records. The S&amp;P 500 has just completed one of its best two-month runs in history, powered almost entirely by the AI chip trade. Berkshire Hathaway announced this morning that it has agreed to buy homebuilder Taylor Morrison for $6.8 billion in cash — one of Greg Abel's first major moves as Warren Buffett's successor at the helm of the firm. In the AI world, the IPO race between OpenAI and Anthropic is intensifying; the Journal reports there are meaningful advantages for whichever company goes public first. Nvidia added fuel to the frenzy by unveiling the first personal laptops designed to run AI agents locally. And California holds its gubernatorial primary today, with former HHS Secretary Xavier Becerra leading at twenty-five percent, Republican Steve Hilton at twenty-one, and billionaire Democrat Tom Steyer at nineteen — a three-way contest where the top two finishers advance to November.</p>
+
+    <p>A Times investigation documents a quiet but consequential exodus: roughly one in five lawyers who worked for the federal government at the end of 2024 have left by March 2026. The departures are creating serious backlogs across agencies — court appearances going unmade, regulations unreviewed, cases unresolved. The government has launched a recruiting drive; so far, three hundred people have expressed interest. The Justice Department, meanwhile, is moving in the opposite direction under acting Attorney General Todd Blanche, ramping up investigations and prosecutions of people the president considers enemies. The Journal has identified more than four dozen individuals now in the administration's crosshairs.</p>
+
+    <p>The Republic of China's main opposition party, the Kuomintang, has sent its chairwoman Cheng Li-wun to Washington for a two-week tour that is drawing concern from Taiwan's government and close attention from Beijing. Her message — that Taiwan's constitution already supports the principle of a single China — aligns with Beijing's framing and arrives as China is actively pressuring Washington to reduce support for the democratic island. Colombia, meanwhile, heads to a June runoff after Sunday's first-round presidential election produced no majority; a far-right lawyer promising an iron-fisted crackdown on drug cartels took the most votes.</p>
+
+    <p>A quick survey of what else is in the air today: Federal food aid restrictions take effect, reducing benefits that millions of low-income households have relied on. Robert F. Kennedy Jr.'s Health Department is reviving a messaging strategy of personal blame and shame for health problems, a practice that public health researchers had largely moved away from over the past two decades. The "Euphoria" series finale aired last night — creator Sam Levinson told the Times the ending "is a tragic one, but it's also the truth." And a new all-electric air taxi made a test flight in New York City, the first visible sign that the technology may be approaching commercial viability.</p>
+
+    <p>At Roland Garros, nineteen-year-old Brazilian João Fonseca defeated Casper Ruud to advance to the quarterfinals in what is becoming one of the more remarkable French Open debuts in recent memory. The U.S. men's national soccer team beat Senegal 3-2 in a World Cup warm-up, with what the Times described as "sensational moments" — encouraging news for a team that has had turbulent vibes in the buildup to the tournament. The NBA Finals between the Spurs and the Knicks tip off Wednesday, and the Stanley Cup Finals between Vegas and Carolina are underway. Locally, the Padres head to Philadelphia after a month the Union-Tribune calls "extremely frustrating."</p>
+
+    <div class="closing">That's your briefing for this morning.</div>
+
   </div>
 </body>
 </html>

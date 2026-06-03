@@ -36,34 +36,26 @@
     border-bottom: 1px solid #d8cdb8;
     padding-bottom: 22px;
   }
-  .block {
-    background: #fbf8f1;
-    padding: 18px 24px;
-    margin: 0 0 24px;
-    border-radius: 3px;
-  }
-  .wsj { border-left: 6px solid #8b0000; }
-  .sdut { border-left: 6px solid #1a3a6b; }
-  .block h2 {
+  article > h2 {
     font-size: 20px;
-    margin: 0 0 12px;
+    margin: 30px 0 12px;
+    padding: 8px 0 8px 14px;
+    border-left: 6px solid #999;
+    background: #fbf8f1;
   }
-  .block h3 {
+  h2.wsj-head { border-left-color: #8b0000; }
+  h2.sdut-head { border-left-color: #1a3a6b; }
+  article h3 {
     font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     color: #5c5347;
-    margin: 16px 0 6px;
+    margin: 18px 0 6px;
   }
-  .block ul {
-    margin: 0 0 8px;
-    padding-left: 20px;
-  }
-  .block li { margin-bottom: 6px; font-size: 16px; }
+  article p { font-size: 17px; margin: 0 0 14px; }
+  p.lede { font-weight: 700; }
   .footnote { font-size: 12.5px; font-style: italic; color: #8a8073; margin-top: 10px; }
   hr.divider { border: none; border-top: 2px solid #d8cdb8; margin: 34px 0; }
-  .prose p { font-size: 18px; margin: 0 0 18px; }
-  .prose p:first-child { font-weight: 700; }
 </style>
 </head>
 <body>
@@ -77,8 +69,7 @@
   </p>
 
   <!-- WSJ WHAT'S NEWS -->
-  <div class="block wsj">
-    <h2>What&rsquo;s News</h2>
+  <h2 class="wsj-head">What&rsquo;s News</h2>
 
     <h3>Business &amp; Finance</h3>
     <p>Fed Chairman Kevin Warsh tapped two outside associates as advisers, one of whom helped write a conservative blueprint urging a radical restructuring of the central bank.</p>
@@ -95,11 +86,9 @@
     <p>The Supreme Court allowed Alabama to use a congressional map that eliminates one of the state&rsquo;s two Democratic-leaning districts.</p>
     <p>The U.S. and Iran exchanged fire in a series of strikes, though the cease-fire remained officially in place.</p>
     <p>Defense Secretary Pete Hegseth blocked the appointment of nine Air Force colonels and delayed promotions for two dozen more senior officers.</p>
-  </div>
 
   <!-- SDUT LOCAL -->
-  <div class="block sdut">
-    <h2>San Diego Union-Tribune</h2>
+  <h2 class="sdut-head">San Diego Union-Tribune</h2>
 
     <h3>Today&rsquo;s Headlines</h3>
     <p>Becerra and Hilton lead in initial results; the San Diego levy on second homes is trailing; Desmond and von Wilpert hold early leads in a pivotal congressional race; Trump names Pulte to a top intelligence post; the president&rsquo;s executive order seeks oversight of AI models; and Iran says it&rsquo;s no longer talking to mediators.</p>
@@ -109,13 +98,11 @@
 
     <h3>Sports</h3>
     <p>A stretch without clutch hits bites the Padres again; Huntington Beach&rsquo;s top prospect stars and sends Henry to a loss; Garrett finally has a shot at a ring with L.A.; Hertl&rsquo;s goal makes it a golden night for Vegas; with Sentry as partner the tournament&rsquo;s future looks brighter; and the Stanley Cup Final has the Golden Knights at the Hurricanes.</p>
-  </div>
 
   <hr class="divider">
 
   <!-- PROSE -->
-  <div class="prose">
-    <p>Good morning, it&rsquo;s Wednesday, June 3, 2026.</p>
+    <p class="lede">Good morning, it&rsquo;s Wednesday, June 3, 2026.</p>
 
     <p>We begin with the war that has come to define this year. Three months after the United States and Israel opened their campaign against Iran with hopes of a swift victory, the conflict has hardened into a costly stalemate, and overnight it grew hotter still. American and Iranian forces traded their most intense fire in months, leaving the ceasefire that was supposed to hold this spring intact in name only. Iranian forces are reported to have struck at U.S. bases in Kuwait and Bahrain and at a vessel near the Strait of Hormuz, after an American Hellfire missile hit an oil tanker bound for an Iranian port. The strategic chokehold remains Tehran&rsquo;s most powerful card: Iran took effective control of the Strait of Hormuz, the passage for at least a fifth of the world&rsquo;s oil, early in the war, sending energy prices higher and boxing in the White House. Pentagon war games had repeatedly predicted exactly that opening move, yet Washington appears to have been caught flat-footed, betting that overwhelming firepower would topple Iran&rsquo;s government before it could close the waterway.</p>
 
@@ -134,7 +121,6 @@
     <p>Closer to home, San Diego readers woke to early returns showing a proposed levy on second homes trailing and a tight congressional race between Jim Desmond and von Wilpert, alongside lighter local fare, a coalition that has now rescued a million pounds of food and a push to write rules for e-bikes on the region&rsquo;s bike paths. In sports, the Padres dropped another game undone by a thin stretch at the plate, the Vegas Golden Knights took a golden opening night in the Stanley Cup Final, and the NBA Finals tip off tonight with the San Antonio Spurs visiting the New York Knicks.</p>
 
     <p>That&rsquo;s your briefing for this morning.</p>
-  </div>
   </article>
 
 </div>

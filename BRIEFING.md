@@ -28,7 +28,7 @@ Read these with the Microsoft 365 connector's `read_resource` tool, BY DIRECT PA
 
 Do NOT use `sharepoint_search` to find these — Microsoft's search index lags new uploads. If a direct read
 fails, retry once; if it still fails, treat that capture as missing and fall back to the newsletters
-(Step 3). A missing capture never stops the briefing.
+(Step 3). A missing capture never stops the briefing; mention the fallback in the source line.
 
 ## Step 3 — Newsletters from Outlook
 Use the Microsoft 365 connector's `outlook_email_search`, then `read_resource` on each hit to get the body.
@@ -70,9 +70,6 @@ boxes and anything before the main article). Put ALL content as one flat flow in
   p.dateline { font-size:1.05em; margin:0 0 6px; color:#555; }
   p.source-note { font-style:italic; font-size:0.9em; color:#666; margin:0 0 22px; }
   p.lede { font-size:1.1em; }
-  hr.divider { border:0; border-top:1px solid #c9bfa8; margin:32px 0; }
-  h2.wsj-head { border-left:6px solid #8b0000; padding-left:12px; color:#8b0000; margin-top:34px; }
-  h2.sdut-head { border-left:6px solid #1a3a6b; padding-left:12px; color:#1a3a6b; margin-top:34px; }
   h3 { margin-bottom:6px; color:#444; }
   p.signoff { margin-top:36px; font-style:italic; text-align:center; }
 </style>
@@ -83,16 +80,28 @@ Body order, inside `<article>`:
 1. `<h1 class="masthead">Morning Briefing</h1>`
 2. `<p class="dateline">` full date
 3. `<p class="source-note">` italic source line naming what was actually used (WSJ front page / 10-Point, NYT front page / The Morning, SDUT e-Edition, web reporting; note any fallbacks or "yesterday's edition").
-4. Prose briefing FIRST — 800–1000 words. The first `<p class="lede">` opens exactly `Good morning, it's {Weekday, Month D, YYYY}.`
-   Flowing radio-script prose: no lists, no headers-with-colons. Lead with the dominant story. Weave in the WSJ
-   front page and 10-Point analysis, the NYT front page and The Morning, and the web searches naturally.
-5. `<hr class="divider">`
-6. `<h2 class="wsj-head">WSJ What's News</h2>`, then `<h3>Business &amp; Finance</h3>` and `<h3>World-Wide</h3>`,
-   each item a full-sentence `<p>` (not a list). Use the front-page capture's What's News wording as the base,
-   enriched by the 10-Point; if the capture is missing, build it from the 10-Point and add a short footnote saying so.
-7. `<h2 class="sdut-head">San Diego Union-Tribune</h2>`, then `<h3>` Today's Headlines / Local / Sports (from the
-   anchor text of the bold dimgray `<p>` links in the e-Edition email), each ONE flowing `<p>` of semicolon-joined headlines.
-8. `<p class="signoff">That's your briefing for this morning.</p>`
+4. The briefing — ONE continuous prose piece. The first `<p class="lede">` opens exactly
+   `Good morning, it's {Weekday, Month D, YYYY}.` Flowing radio-script prose: no lists, no headers-with-colons,
+   no per-source sections. Lead with the dominant story, then move through the rest in order of importance,
+   grouping related stories (world, U.S. politics, business & markets, other national, San Diego local, sports).
+   Length is whatever full coverage needs — typically 1,200–1,800 words.
+
+   COMPLETE COVERAGE (required): before writing, build a working checklist (not published) of every story in
+   - the WSJ front-page capture, including every What's News: Business & Finance and World-Wide item,
+   - the WSJ 10-Point,
+   - the NYT front-page capture ("The Front Page" section of Today's Paper) and The Morning,
+   - the SDUT e-Edition: Today's Headlines, Local and Sports (anchor text of the bold dimgray `<p>` links).
+   Merge duplicates across sources into one story. Every story on the checklist must be mentioned in the prose —
+   major stories get a paragraph, minor ones can be a sentence or a clause. Do not list What's News or any
+   headlines verbatim; retell everything in your own words. Before finishing, re-check the checklist against
+   the draft and add anything missed.
+
+   CROSS-SOURCE DIFFERENCES: when the same story appears in more than one source (WSJ, NYT, SDUT, web reporting),
+   compare them. Where they differ — facts or figures, emphasis, framing, what's new since the edition went to
+   press, or one source covering an angle the others don't — say so naturally in the prose and attribute it
+   (e.g. "The Journal puts the figure at…, while the Times reports…"). Use web searches to settle which account
+   is most current. Where sources agree, don't belabor it.
+5. `<p class="signoff">That's your briefing for this morning.</p>`
 
 Paraphrase — do not reproduce long verbatim passages from any source.
 
